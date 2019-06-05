@@ -1,0 +1,338 @@
+@charset "UTF-8";
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono:100';
+
+/* Test si jQuery est actif */
+#jquery-test p {
+  text-align:center;
+  text-transform:uppercase;
+  font-weight:bold;
+  font-size:0.75em;
+}
+
+#jquery-test {
+    width: 250px;
+  background:#f4364c;
+  color:#fff;
+}
+
+#jquery-test.loaded {
+  background:#45b29d;
+}
+
+
+
+#jquery-test.loaded p.off,
+#jquery-test:not(.loaded) p.on {
+  display:none;
+}
+
+footer .panel {
+    width: 500px;
+}
+
+/* Le reste du site */
+
+body {
+    margin: 0px;
+    overflow-x: hidden;
+}
+
+/* Style the video: 100% width and height to cover the entire window */
+#bgVideo {
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+header, section, div, footer {
+    margin: 0px;
+    position: relative;
+}
+
+#topPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0px 2px 15px 1px grey;
+    z-index: 1000;
+}
+
+.logo img{
+    margin-left: 87px;
+    margin-top: 15px;
+    margin-bottom: -5px;
+    height: 450px;
+}
+
+.logo {
+    border-bottom: 2px solid grey;
+    width: 850px;
+    align-self: center;
+}
+
+.navTitle {
+    width: auto;
+    align-self: stretch;
+    background-color: rgba(200,200,200,0.45);
+}
+
+.teamName {
+    align-self: center;
+    text-align: center;
+    width: 450px;
+    margin: auto;
+    font-size: 65px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin-top: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 450px;
+    margin: auto;
+    padding: 10px;
+}
+
+.navBg {
+    background-repeat: cover;
+    background-color: rgba(120,120,120,0.2);
+}
+
+nav button {
+    border: 5px outset seashell;
+    background: rgba(0,0,0,0);
+}
+
+a {
+    text-decoration: none;
+}
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    color: black;
+}
+
+.rules h1 {
+    text-align: center;
+    text-decoration: underline overline;
+    color: red;
+}
+
+.rules {
+    margin: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 750px;
+    text-align: left;
+    background-color: antiquewhite;
+    z-index: 1;
+}
+
+.rules span {
+    color: red;
+    font-weight: bolder;
+    font-style: inherit;
+    font-size: 40px;
+}
+
+.staff {
+    width: 100%;
+}
+
+.staff h3 {
+    font-size: 35px;
+}
+
+.sO, .sA,
+.sB, .sC {
+    width: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+} 
+
+.idBloc {
+    margin: auto;
+    align-self: center;
+    padding: 5px;
+    box-shadow: 0px 10px 15px 3px grey;
+    width: 305px;
+    min-height: 290px;
+}
+
+.idBloc img {
+    width: 120px;
+    height: 120px;
+}
+
+.idBloc h4 {
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+}
+
+.idBloc h5 {
+    font-size: 25px;
+    margin: 15px;
+}
+
+.idBloc p {
+    font-size: 20px;
+}
+
+article {
+    align-self: center;
+    width: 450px;
+}
+
+article .carousel {
+    margin: 0px;
+    width: 450px;
+    height: 250px;
+}
+
+.text {
+    font-weight: 75;
+    font-size: 28px;
+    color: #fafafa;
+    font-family: 'Roboto Mono', monospace;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+h3, h4 {
+    text-decoration: underline overline;
+    text-decoration-color: red;
+}
+
+.discord {
+    align-self: center;
+    height: 125px;
+    width: 250px;
+    padding: 5px;
+    background-color: rgba(0,0,0,0.45);
+}
+
+.discord h4 {
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 15px;;
+}
+
+.discord a {
+    text-decoration: underline overline;
+    text-decoration-color: red;
+}
+.comu {
+    display: flex;
+    flex-direction: row;
+}
+
+.group {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    font-size: 25px;
+}
+
+.steam {
+    margin-bottom: 10px;
+}
+
+.discordA {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.discord img,
+.steam img {
+    width: 650px;
+}
+
+.info {
+    width: 350px;
+    margin-right: 5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    padding: 1%;
+    border-radius: 40px;
+    box-shadow: 0px 5px 15px 5px gainsboro;
+}
+
+.info p {
+    font-size: 20px;
+    margin: 15px;
+    margin-bottom: 10%;
+}
+
+.infoPhoto {
+    width: auto;
+    height: 150px;
+    margin-bottom: 45px;
+    border: 15px ridge gainsboro;
+}
+
+.infoVideo {
+    width: auto;
+    height: 150px;
+    margin-top: 45px;
+    border: 15px outset seashell;
+}
+
+.double {
+    display: flex;
+    justify-content: center;
+}
+
+.event, .playerMonth {
+    margin: 5px;
+    height: 225px;
+    width: 250px;
+    margin-bottom: 5px;
+    background-color: rgba(0,0,0,0.45);
+}
+
+.event h4, .playerMonth h4 {
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+.pub {
+    align-self: center;
+    width: 750px;
+    height: 350px;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.pub h4 {
+    margin-top: 20px;
+}
+
+footer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(200,200,200,0.65);
+    width: 100%;
+    margin: 0px;
+    padding-top: 40px;
+    padding-bottom: 35px;
+    z-index: 500;
+}
