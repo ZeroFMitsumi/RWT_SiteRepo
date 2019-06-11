@@ -88,7 +88,7 @@ header, section, div, footer {
     margin-top: 20px;
 }
 
-/* #result {
+/*#result {
     text-align: center;
     margin-right: auto;
     margin-left: auto;
@@ -97,7 +97,7 @@ header, section, div, footer {
     border-bottom: 1px solid;
     border-right: 1px outset;
     border-left: 1px inset;
-} */
+}*/
 
 nav {
     display: flex;
