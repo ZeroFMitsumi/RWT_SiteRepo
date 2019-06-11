@@ -88,6 +88,17 @@ header, section, div, footer {
     margin-top: 20px;
 }
 
+#result {
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 17px;
+    width: 200px;
+    border-bottom: 1px solid;
+    border-right: 1px outset;
+    border-left: 1px inset;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -145,6 +156,10 @@ section {
     z-index: 1;
 }
 
+.rules p {
+    font-size: 20px;
+}
+
 .rules span {
     color: red;
     font-weight: bolder;
@@ -157,6 +172,9 @@ section {
 }
 
 .staff h3 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 210px;
     font-size: 35px;
 }
 
@@ -170,10 +188,12 @@ section {
 
 .idBloc {
     margin: auto;
+    border-radius: 25px;
     align-self: center;
-    padding: 5px;
+    padding: 1px;
     box-shadow: 0px 10px 15px 3px grey;
-    width: 305px;
+    width: 205px;
+    height: 350px;
     min-height: 290px;
 }
 
@@ -183,18 +203,25 @@ section {
 }
 
 .idBloc h4 {
+    margin-top: 20px;
     text-align: center;
-    margin: 10px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
     font-size: 30px;
 }
 
 .idBloc h5 {
     font-size: 25px;
-    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 140px;
 }
 
 .idBloc p {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 article {
@@ -231,13 +258,13 @@ h3, h4 {
 
 .discord h4 {
     text-decoration: none;
-    margin-top: 5px;
-    margin-bottom: 15px;;
+    margin-top: 0px;
+    margin-bottom: 5px;;
 }
 
-.discord a {
-    text-decoration: underline overline;
-    text-decoration-color: red;
+.discord a img {
+    margin-top: 5px;
+    width: 205px;
 }
 .comu {
     display: flex;
@@ -260,9 +287,9 @@ h3, h4 {
     margin-bottom: 15px;
 }
 
-.discord img,
+.conflitImg,
 .steam img {
-    width: 650px;
+    max-width: 550px;
 }
 
 .info {

@@ -6,6 +6,7 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
 		<script type="text/javascript" src="js/sizzle.js"></script>
+		<script type="text/javascript" src="js/lS.js"></script>
 	</head>
 	<body>
 		<!-- The video BG-->
@@ -19,6 +20,7 @@
 			</div>
 			<div class="navTitle">
 				<h1 class="teamName">RastaWarTeam</h1>
+				<div id="result"></div>
 				<nav>
 					<button><a href="#">Accueil</a></button>
 					
@@ -40,13 +42,16 @@
 			</article>
 			<div class="discord">
 				<!-- Lien discord -->
-				<h4>Notre Discord:</h4>
-				<a href="pages/comunity.html">Clique ici</a>
+				<!-- <h4>Notre Discord:</h4> -->
+				<a href="pages/comunity.html"><img src="images/discord.png"/></a>
 			</div>
 			<div class="double">
 				<div class="event">
 					<!-- Les évenements -->
 					<h4>Evènements:</h4>
+					<div class="eventPanel">
+						<!-- info des evenement -->
+					</div>
 				</div>
 				<div class="playerMonth">
 					<!-- Joueur Du Mois -->
@@ -64,6 +69,12 @@
 				<p class="on">jQuery ACTIF!</p>
 			</div>
 			<span>2019 by Zero F Developement</span>
+			<form id="pseudo">
+				<input type="text" name="pseudo" id="name" value="" placeholder="Your pseudo"/>
+				<button type="button" id="addPseudo">OK</button>
+				<button type="button" id="remPseudo">Remove Pseudo</button>
+				<div id="result"></div>
+			</form>
 		</footer>
 		<script type="text/javascript" src="js/main.js"></script>
 		<script type="text/javascript" src="js/text-scramble-effect/js/index.js"></script>
