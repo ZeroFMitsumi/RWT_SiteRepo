@@ -109,7 +109,6 @@ nav {
 }
 
 .navBg {
-    background-repeat: cover;
     background-color: rgba(120,120,120,0.2);
 }
 
@@ -188,36 +187,38 @@ section {
 
 .idBloc {
     margin: auto;
+    padding: 5px;
     border-radius: 25px;
     align-self: center;
     padding: 1px;
     box-shadow: 0px 10px 15px 3px grey;
-    width: 205px;
-    height: 350px;
-    min-height: 290px;
+    max-width: 205px;
+    min-width: 185px;
+    max-height: 350px;
+    min-height: 220px;
 }
 
 .idBloc img {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
 }
 
 .idBloc h4 {
-    margin-top: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
     text-align: center;
     width: 150px;
     margin-left: auto;
     margin-right: auto;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 .idBloc h5 {
-    font-size: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    width: 140px;
+    align-self: center;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: auto;
 }
 
 .idBloc p {
@@ -336,8 +337,17 @@ h3, h4 {
 }
 
 .event h4, .playerMonth h4 {
-    text-decoration: none;
+    text-decoration: underline;
     margin-top: 5px;
+}
+
+.playerMonth span {
+    font-variant-caps: small-caps;
+    color: chartreuse;
+}
+
+.playerMonth p, .event p {
+    margin: 1px;
 }
 
 .pub {
@@ -348,7 +358,15 @@ h3, h4 {
 }
 
 .pub h4 {
-    margin-top: 20px;
+    margin-top: 10px;
+}
+
+.pub p {
+    max-width: 225px;
+    margin-left: 15px;
+    padding: 5px;
+    box-shadow: 0px 0px 5px 8px grey;
+    border-radius: 15px;
 }
 
 footer {

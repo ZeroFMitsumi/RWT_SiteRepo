@@ -5,6 +5,11 @@ window.onload = function() {
 		document.getElementById('jquery-test').classList.add('loaded');
 	}
 
+    var messEvent = "<p>Tournois Flash </br> Bientôt les informations</p>";
+    var monthPlayer = '<p> <span>El Nachos</span> <br/> Pour un superbe Kill au Taser.</p>';
+    var pubLast = '<p>Recrutement Ouvert:<br/> rejoingner le groupe steam pour avoir accès a notre discord et opuvoir postuler</p>';
+    var event = "<div class=\"plus\">plusEvent</div>";
+
 	$(document).ready(function() {
 		//Le code jQuery commence ici
 		var nav = $('.navTitle');
@@ -17,12 +22,18 @@ window.onload = function() {
 		var btnRule = $('.rule');
 		var invisible = $('.no');
 
+        //Nav Bar 
 		$(invisible).hide();
 		$(dropdown).hide();
 
 		$(btnRule).mouseover('on', function() {
 			$(dropdown).show();
 		});
+
+        //Evènement player of month et publication on main page
+        $(evenement).append(messEvent);
+        $(playerMonth).append(monthPlayer);
+        $(publication).append(pubLast);
 
 		var carouselImg = [
 		"images/20190424130402_1.jpg",
@@ -37,8 +48,6 @@ window.onload = function() {
 		];
 
 		var imgNum = 0;
-
-		//Nav Bar
 		
 		//Carrousel
         var nextImg = function() {
