@@ -162,7 +162,8 @@ window.onload = function() {
         		});
         		$('.sC h4').css('color', 'gold');
         		$('.sC h5').css('color', 'navy');
-        		$('.sC p').css('color', 'white');
+        		$('.sC p').css('backgroundColor', 'rgba(200,200,200,0.4)')
+                .css('color', 'rgb(66,0,255)');
         	});
         	$('.overC').css({
         		boxShadow: '0px 0px 5px 1px gray',
