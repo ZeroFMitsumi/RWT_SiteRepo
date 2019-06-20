@@ -5,9 +5,9 @@ window.onload = function() {
 		document.getElementById('jquery-test').classList.add('loaded');
 	}
 
-    var messEvent = "<p>Tournois Flash </br> Bientôt les informations</p>";
-    var monthPlayer = '<p> <span>El Nachos</span> <br/> Pour un superbe Kill au Taser.</p>';
-    var pubLast = '<p>Recrutement Ouvert:<br/> rejoingner le groupe steam pour avoir accès a notre discord et opuvoir postuler</p>';
+    var messEvent = "<p>Tournois Flash: <br/></br> Bientôt les informations</p>";
+    var monthPlayer = '<p> <span>El Nachos</span> <br/><br/> Pour un superbe Kill au Taser.</p>';
+    var pubLast = '<p>Recrutement Ouvert:<br/> rejoingner le groupe steam pour avoir accès a notre discord et pouvoir postuler</p>';
     var event = "<div class=\"plus\">plusEvent</div>";
 
 	$(document).ready(function() {
