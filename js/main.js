@@ -27,14 +27,43 @@ window.onload = function() {
 		$(invisible).hide();
 		$(dropdown).hide();
 
-        $(btnNav).mouseover('on', function() {
-            $('nav button').css('boxShadow', '0px 0px 5px 1px gray');
+        // Btn Acceuil
+        $('.acceuil').mouseover('on', function() {
+            $('.acceuil').css('boxShadow', '0px 0px 5px 1px gray');
         });
 
-        $(btnNav).mouseout('on', function() {
-            $('nav button').css('boxShadow', 'none');
+        $('.acceuil').mouseout('on', function() {
+            $('.acceuil').css('boxShadow', 'none');
         });
 
+        // Btn règle
+        $('.regles').mouseover('on', function() {
+            $('.regles').css('boxShadow', '0px 0px 5px 1px gray');
+        });
+
+        $('.regles').mouseout('on', function() {
+            $('.regles').css('boxShadow', 'none');
+        });
+
+        // Btn équipe
+        $('.equipe').mouseover('on', function() {
+            $('.equipe').css('boxShadow', '0px 0px 5px 1px gray');
+        });
+
+        $('.equipe').mouseout('on', function() {
+            $('.equipe').css('boxShadow', 'none');
+        });
+
+        // Btn Community
+        $('.comunityNav').mouseover('on', function() {
+            $('.comunityNav').css('boxShadow', '0px 0px 5px 1px gray');
+        });
+
+        $('.comunityNav').mouseout('on', function() {
+            $('.comunityNav').css('boxShadow', 'none');
+        });
+
+        // apparission du bouton equipe
 		$(btnRule).mouseover('on', function() {
 			$(dropdown).show();
 		});
@@ -76,9 +105,9 @@ window.onload = function() {
 
         //La Page Staff
         var staff = $('.fondateur, .sO');
-        var teamA = $('.sA');
-        var teamB = $('.sB');
-        var teamC = $('.sC');
+        var teamA = $('.sA, .chefA');
+        var teamB = $('.sB, .chefB');
+        var teamC = $('.sC, .chefC');
         $(staff).hide();
         $(teamA).hide();
         $(teamB).hide();
@@ -112,7 +141,7 @@ window.onload = function() {
         //Team Alpha
         $('.overA').on('click', function() {
         	$(teamA).show(1500, function() {
-        		$('.sA .idBloc').css({
+        		$('.sA .idBloc, .chefA').css({
         			backgroundImage: 'url("../images/bg/bgOrtest.png")',
         			backgroundSize: 'cover'
         		});
@@ -137,7 +166,7 @@ window.onload = function() {
         //Team Bravo
         $('.overB').on('click', function() {
         	$(teamB).show(1500, function() {
-        		$('.sB .idBloc').css({
+        		$('.sB .idBloc, .chefB').css({
         			backgroundImage: 'url("../images/bg/rondale.png")',
         			backgroundSize: 'cover'
         		});
@@ -165,7 +194,7 @@ window.onload = function() {
         //Team Charlie
         $('.overC').on('click', function() {
         	$(teamC).show(1500, function() {
-        		$('.sC .idBloc').css({
+        		$('.sC .idBloc, .chefC').css({
         			backgroundImage: 'url("../images/bg/bg.png")',
         			backgroundSize: 'cover'
         		});
