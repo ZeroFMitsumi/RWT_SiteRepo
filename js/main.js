@@ -6,7 +6,7 @@ window.onload = function() {
 	}
 
     var messEvent = "<p>Tournois Flash: <br/></br> Bientôt les informations</p>";
-    var monthPlayer = '<p> <span>El Nachos</span> <br/><br/> Pour un superbe Kill au Taser.</p>';
+    var monthPlayer = '<p> <span>El Nachos</span> <br/><br/> Pour 3 superbes Kill au Taser en Game.</p>';
     var pubLast = '<p>Recrutement Ouvert:<br/> rejoingner le groupe steam pour avoir accès a notre discord et pouvoir postuler</p>';
     var event = "<div class=\"plus\">plusEvent</div>";
 
@@ -21,10 +21,19 @@ window.onload = function() {
 		var dropdown = $('.dropdown');
 		var btnRule = $('.rule');
 		var invisible = $('.no');
+        var btnNav = $('nav button');
 
         //Nav Bar 
 		$(invisible).hide();
 		$(dropdown).hide();
+
+        $(btnNav).mouseover('on', function() {
+            $('nav button').css('boxShadow', '0px 0px 5px 1px gray');
+        });
+
+        $(btnNav).mouseout('on', function() {
+            $('nav button').css('boxShadow', 'none');
+        });
 
 		$(btnRule).mouseover('on', function() {
 			$(dropdown).show();
