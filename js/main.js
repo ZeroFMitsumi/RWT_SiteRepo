@@ -65,7 +65,7 @@ window.onload = function() {
 
         // apparission du bouton equipe
 		$(btnRule).mouseover('on', function() {
-			$(dropdown).show();
+			$(dropdown).slideDown();
 		});
 
         //Evènement player of month et publication on main page
@@ -170,9 +170,9 @@ window.onload = function() {
         			backgroundImage: 'url("../images/bg/rondale.png")',
         			backgroundSize: 'cover'
         		});
-        		$('.sB h4').css('color', 'goldenrod');
-        		$('.sB h5').css('color', 'gold');
-        		$('.sB p').css('color', 'white');
+        		$('.sB h4, .chefB h4').css('color', 'goldenrod');
+        		$('.sB h5, .chefB h5').css('color', 'gold');
+        		$('.sB p, .chefB p').css('color', 'white');
         	});
         	$('.overB').css({
         		boxShadow: '0px 0px 5px 1px gray',
